@@ -10,6 +10,7 @@ class AdminController extends AppController {
         $this->layout = 'empty';
         $view = "login";
         $r = [];
+        
         if ($this->request->is('post') || $this->request->is('put')) {
             $data = $this->data;
             if (!empty($data['username']) && !empty($data['password'])) {
@@ -33,6 +34,7 @@ class AdminController extends AppController {
             }
         }
         if (0 < $this->Session->read('uid')) {
+            if ((int)$this->Session->read('role') === 10) $this->redirect('/');
             $this->layout = "admin";
             $view = "index";
         }
@@ -45,7 +47,7 @@ class AdminController extends AppController {
             $this->Session->delete('role');
             $this->Session->destroy();
         }
-        $this->redirect('/admin/');
+        $this->redirect('/login/');
     }
     
 }

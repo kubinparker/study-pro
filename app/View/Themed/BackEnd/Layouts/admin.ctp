@@ -12,13 +12,6 @@
         <link rel="stylesheet" href="/common/css/jquery.mCustomScrollbar.min.css">
         <link rel="stylesheet" href="/common/css/jquery-ui-1.9.2.custom/css/smoothness/jquery-ui-1.9.2.custom.min.css">
         <link rel="stylesheet" href="/common/css/colorbox.css">
-        <style type="text/css">
-            .scrollbar {
-                height: 500px;
-                overflow: hidden;
-                padding: 10px;
-            }
-        </style>
         <script src="/common/js/jquery.js"></script>
         <script src="/common/js/jquery-ui-1.9.2.custom.min.js"></script>
         <script src="/common/js/jquery.mCustomScrollbar.concat.min.js"></script>

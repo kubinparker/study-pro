@@ -27,7 +27,7 @@
             <div class="content_inr">
                 <div class="box" style="max-width:600px;margin-left:auto;margin-right:auto;">
                     <h3>管理者ログイン</h3>
-                    <form action="/admin" id="AdminIndexForm" method="post">
+                    <?= $this->Form->create(false, ['url' => '/admin','method' => 'post'])?>
                         <div class="table_area form_area">
                             <table class="vertical_table">
                                 <tr>
@@ -44,7 +44,7 @@
                                 <a href="javascript:void(0);" class="btn_back">リセット</a>
                             </div>
                         </div>
-                    </form>
+                    <?= $this->Form->end(); ?>
                 </div>
             </div>
         </div>
@@ -54,10 +54,10 @@
     <script>
         $(function() {
             $('a.btn_confirm').on('click', function() {
-                $('#AdminIndexForm').submit();
+                $('#indexForm').submit();
             });
             $('a.btn_back').on('click', function() {
-                document.getElementById("AdminIndexForm").reset();
+                document.getElementById("indexForm").reset();
             });
         })
     </script>
