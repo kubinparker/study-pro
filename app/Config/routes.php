@@ -61,6 +61,7 @@ $routes->scope('/', function (RouteBuilder $builder) {
     $builder->prefix('Admin', function (RouteBuilder $build) {
         $build->connect('/', ['controller' => 'Admin', 'action' => 'index']);
         $build->connect('/logout', ['controller' => 'Admin', 'action' => 'logout']);
+        $build->connect('/soxo/*', ['controller' => 'SoXo', 'action' => 'index']);
         $build->fallbacks();
     });
     /*

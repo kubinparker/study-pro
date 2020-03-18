@@ -231,7 +231,9 @@ select::-ms-expand {
 	display: inline-block;
 }
 .btn_area a.btn_confirm,
-.btn_area a.btn_send {
+.btn_area a.btn_send,
+.btn_area button.btn_send,
+.btn_area button.btn_confirm {
 	width: 20%;
 	background: #427ac3;
 	-webkit-border-radius: 2em;
@@ -239,6 +241,7 @@ select::-ms-expand {
 	border-radius: 2em;
 	padding: 0.5em;
 	border-bottom: 3px solid #d0d0d0;
+	color: #fff;
 }
 .btn_area a.btn_confirm:hover,
 .btn_area a.btn_send:hover {

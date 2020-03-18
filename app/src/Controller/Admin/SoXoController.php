@@ -15,9 +15,19 @@
             parent::beforeFilter($event);
         }
 
-        public function index()
+        public function index($date = null)
         {
-            $this->set('result', [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]);
-            $this->set('data', [$this->modelName => []]);
+            $date = ($date) ? $date : date('Y-m-d');
+            $date = date('Y-m-d',strtotime($date));
+            $data = $this->{$this->modelName}->render_number($date);
+
+            if (!$data && $date == date('Y-m-d')) {
+                $data = $this->{$this->modelName}->save_number();
+            }
+            
+            if($this->request->is(['post', 'put'])){
+                $check = 1;
+            }
+            $this->set('data', [$this->modelName => $data]);
         }
     }
