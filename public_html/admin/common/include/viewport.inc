@@ -1,1 +1,1 @@
-width=1000px, user-scalable=yes
+width=device-width, initial-scale=1

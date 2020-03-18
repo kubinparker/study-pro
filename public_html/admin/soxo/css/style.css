@@ -1,0 +1,47 @@
+.boxresult{
+    border: 1px solid #ccc;
+}
+#result_1::after,
+#result_2::after,
+#result_3::after{
+    content: '';
+    height: 1px;
+    clear: both;
+    display: block;
+}
+#result_1 li,
+#result_2 li,
+#result_3 li {
+    float: left;
+    width: 10%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#result_1 li:nth-child(2n),
+#result_2 li:nth-child(2n-1),
+#result_3 li:nth-child(2n) {
+    background: #cbe6ff;
+}
+.btn_area{
+    margin-top: 20px;
+}
+
+[class*="result_"] li,
+.boxresult {
+    animation: timeline;
+    animation-duration: 2s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+    background: linear-gradient(to bottom, #f2f0f0 8%, #fff 18%, #f2f0f0 33%);
+    background-size: 800px auto; 
+}
+@keyframes timeline {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 300px; 
+    }
+}
