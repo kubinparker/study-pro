@@ -1,0 +1,157 @@
+2020-02-17 07:25:48 Notice: Notice (8): Array to string conversion in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+array_diff - [internal], line ??
+App\Model\Table\AppTable::trustList() - APP/Model/Table/AppTable.php, line 59
+App\Test\TestCase\Model\Table\AppsTableTest::testTrustList_Null_Image_Files() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 63
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 07:25:48 Notice: Notice (8): Array to string conversion in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+array_diff - [internal], line ??
+App\Model\Table\AppTable::trustList() - APP/Model/Table/AppTable.php, line 59
+App\Test\TestCase\Model\Table\AppsTableTest::testTrustList_Null_Image_Null() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 85
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 07:36:26 Notice: Notice (8): Array to string conversion in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 58]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+array_diff - [internal], line ??
+App\Model\Table\AppTable::trustList() - APP/Model/Table/AppTable.php, line 58
+App\Test\TestCase\Model\Table\AppsTableTest::testTrustList_Null_Image_Files() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 63
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 07:37:50 Notice: Notice (8): Array to string conversion in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 58]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+array_diff - [internal], line ??
+App\Model\Table\AppTable::trustList() - APP/Model/Table/AppTable.php, line 58
+App\Test\TestCase\Model\Table\AppsTableTest::testTrustList_Null_Image_Files() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 63
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 09:49:50 Notice: Notice (8): Undefined index: file_name in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 325]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 325
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 71
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 09:50:12 Notice: Notice (8): Undefined index: name in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 269]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 269
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 71
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 09:50:12 Notice: Notice (8): Undefined index: name in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 324]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 324
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 71
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 09:50:12 Notice: Notice (8): Undefined index: file_name in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 325]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 325
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 71
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 09:51:19 Notice: Notice (8): Undefined index: extensions in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 327]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 327
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 71
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+

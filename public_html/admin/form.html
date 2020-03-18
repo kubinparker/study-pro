@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="<!--#include virtual="./common/include/viewport.inc"-->">
+<meta name="Description" content="<!--#include virtual="./common/include/description.inc"-->">
+<meta name="Keywords" content="<!--#include virtual="./common/include/keywords.inc"-->">
+<title><!--#include virtual="./common/include/title.inc"--></title>
+
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta property="og:type" content="website">
+
+<link rel="stylesheet" href="./common/css/normalize.css?v=0946b8d15cc3627bb2172fcb3cd15e2b">
+<link rel="stylesheet" href="./common/css/jquery.fancybox.css">
+<link rel="stylesheet" href="./common/css/font.css?v=1ac354392c1a0aaa2e7adad76862b4fa">
+<link rel="stylesheet" href="./common/css/common.css?v=791547e1be3ca90d5b30b084953a113b">
+<link rel="stylesheet" href="./css/style.css">
+
+<!--[if lt IE 9]>
+<script src='./common/js/html5shiv.js?v=e5adbc5e3c3f9553a8fb662c09400c59'></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+<!--#include virtual="./common/include/header.inc"-->
+<!--#include virtual="./common/include/side.inc"-->
+  <div id="content">
+    <div class="title_area">
+      <h1>h1 登録フォーム</h1>
+      <div class="pankuzu">
+        <ul>
+          <li><a href="/" class="icon-icn_home">&nbsp;</a></li>
+          <li><span>page</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="error">error messeages error messeages error messeages error messeages error messeages</div>
+    <div class="content_inr">
+      <h2>h2 コンテンツタイトル</h2>
+      <div class="box">
+        <h3>h3 登録フォーム（通常）</h3>
+        <div class="table_area form_area">
+          <table class="vertical_table">
+            <tr>
+              <td>テキスト入力</td>
+              <td><input type="text"></td>
+            </tr>
+            <tr>
+              <td>テキストエリア</td>
+              <td><textarea rows="8" cols="40"></textarea></td>
+            </tr>
+            <tr>
+              <td>ラジオボタン</td>
+              <td><input type="radio" id="r01" name="radio" /><label for="r01">foo</label> <input type="radio" id="r02" name="radio" /><label for="r02">foo2</label></td>
+            </tr>
+            <tr>
+              <td>チェックボックス</td>
+              <td><input type="checkbox" id="c01" name="check" /><label for="c01">foo</label></td>
+            </tr>
+            <tr>
+              <td>セレクトボックス</td>
+              <td>
+                <select>
+                  <option value='' disabled selected style='display:none;'>選択してください</option>
+                  <option>A</option>
+                  <option>B</option>
+                  <option>C</option>
+                  <option>D</option>
+                  <option>E</option>
+                  <option>F</option>
+                  <option>G</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>セレクトボックス（マルチ）</td>
+              <td>
+                <select id="s01" name="s01" size="5" class="multiple" multiple>
+                  <option value="1">A</option>
+                  <option value="2">B</option>
+                  <option value="3">C</option>
+                  <option value="4">D</option>
+                  <option value="5">E</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>ファイルアップロード</td>
+              <td><label class="input_file" for="file">ファイルを選択<input type="file" id="file" style="display:none;"></label></td>
+            </tr>
+            <tr>
+              <td>削除ボタン</td>
+              <td><div class="btn_area"><a href="" class="btn_delete">削除する</a></div></td>
+            </tr>
+          </table>
+          <div class="btn_area">
+            <a href="" class="btn_confirm">確認する</a>
+            <a href="" class="btn_back">戻る</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <h3>h3 登録フォーム（モーダル）</h3>
+        <div class="plain_area">
+          <a href="./modal_form.html">モーダルで登録フォームを開く</a>
+        </div>
+      </div>
+    </div>
+<!--#include virtual="./common/include/footer.inc"-->
+  </div>
+</div>
+
+<script src="./common/js/jquery.js?v=9aecea3830b65ecad103ee84bd5fe294"></script>
+<script src="./common/js/jquery.fancybox.pack.js"></script>
+<script src="./common/js/base.js?v=2a9971449cd05f3c304a78d26568381e"></script>
+<script src="./common/js/fancy.js"></script>
+
+<!--#include virtual="./common/include/ga.inc"-->
+</body>
+</html>

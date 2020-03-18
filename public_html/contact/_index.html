@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!--#include virtual="/common/include/ga.inc"-->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="<!--#include virtual='/common/include/viewport.inc'-->">
+  <meta name="Description" content="<!--#include virtual='/common/include/description.inc'-->">
+  <meta name="Keywords" content="<!--#include virtual='/common/include/keywords.inc'-->">
+  <title>代表メッセージ | <!--#include virtual="/common/include/title.inc"--></title>
+
+  <meta property="og:title" content="<!--#include virtual='/common/include/title.inc'-->">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:type" content="article">
+
+  <link rel="shortcut icon" href="/favicon.ico?v=83c7f75756f3eb5cba73287ee0814423" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico?v=83c7f75756f3eb5cba73287ee0814423" type="image/x-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/common/css/normalize.css?v=a35eedec4247e607ae7830e2b84708d8">
+  <link rel="stylesheet" href="/common/css/common.css?v=3c8893cedd7b416494acf2a162621176">
+  <link rel="stylesheet" href="./css/style.css?v=9bbf28dd889059658c79ec5bc09d7478">
+</head>
+
+<body>
+  <div class="container" id="container">
+    <header id="header" class="header">
+      <!--#include virtual='/common/include/header.inc'-->
+    </header><!-- end header -->
+
+    <main>
+      <section class="entry">
+        <div class="breadcrumb">
+          <ul class="breadcrumb__list row">
+            <li><a href="/">トップ</a></li>
+            <li>お問い合わせ</li>
+          </ul>
+        </div><!-- end breadcrumb-->
+
+        <div class="ttl">
+          <h2 class="ttl__tt row"><span>contact</span>お問い合わせ</h2>
+        </div><!-- end ttl-->
+
+        <div class="ctnMain row">
+          <form class="form_contact" action="confirm.html" method="post">
+            <div class="form_group">
+              <div class="box_lb">
+                <label for="name">名前<span class="lb_danger">必須</span></label>
+              </div>
+              <div class="box_ipt">
+                <div class="form_control ipt_w02">
+                  <input id="name" type="text" placeholder="姓">
+                </div>
+                <div class="form_control ipt_w02">
+                  <input type="text" placeholder="名">
+                </div>
+              </div>
+            </div>
+            <div class="form_group">
+              <div class="box_lb">
+                <label for="name_read">フリガナ<span class="lb_danger">必須</span></label>
+              </div>
+              <div class="box_ipt">
+                <div class="form_control ipt_w02">
+                  <input id="name_read" type="text" placeholder="セイ">
+                </div>
+                <div class="form_control ipt_w02">
+                  <input type="text" placeholder="メイ">
+                </div>
+              </div>
+            </div>
+            <div class="form_group">
+              <div class="box_lb">
+                <label for="phone">電話番号</label>
+              </div>
+              <div class="box_ipt">
+                <div class="form_control">
+                  <input id="phone" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="form_group">
+              <div class="box_lb">
+                <label for="mail">E-MAIL<span class="lb_danger">必須</span></label>
+              </div>
+              <div class="box_ipt">
+                <div class="form_control">
+                  <input id="mail" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="form_group align_start">
+              <div class="box_lb">
+                <label for="company">御社名</label>
+              </div>
+              <div class="box_ipt">
+                <div class="form_control">
+                  <input id="company" type="text">
+                  <p class="notes_ipt">※法人の方はご記入ください。</p>
+                </div>
+              </div>
+            </div>
+            <div class="form_group">
+              <div class="box_lb">
+                <label for="inquiry">お問い合わせ内容<span class="lb_danger">必須</span></label>
+              </div>
+              <div class="box_ipt">
+                <div class="form_control">
+                  <textarea id="inquiry" class="txt_area" rows="4" cols="50"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form_btn btn">
+              <button class="btnForm_control" type="submit" value="確認">確認</button>
+            </div>
+          </form>
+        </div><!-- end ctnMain-->
+      </section><!-- end entry-->
+    </main>
+
+    <footer id="footer" class="footer">
+      <!--#include virtual='/common/include/footer.inc'-->
+    </footer><!-- end footer -->
+  </div>
+
+  <script src="/common/js/libs.js?v=2b85e49658f683448697b8cb68738bf2"></script>
+  <script src="/common/js/base.js?v=32c2ddad09c736db25beb1ced58217f0"></script>
+</body>
+</html>

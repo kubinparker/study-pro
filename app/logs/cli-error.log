@@ -1,0 +1,1918 @@
+2020-02-17 05:43:22 Error: [Cake\Http\Exception\NotFoundException] Not Found in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 70
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:66
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:43:22 Error: [Cake\View\Exception\MissingTemplateException] Template file 'Pages/not_existing.php' could not be found.
+
+The following paths were searched:
+
+- /Users/huy.nguyen/project/cake4/cake4-test/templates/
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/
+ in Pages/not_existing.php on line 1334
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/Users/huy.nguyen/project/cake4/cake4-test/templates/',
+    1 => '/Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/View/View.php:747
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php:65
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:80
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:43:22 Error: [Cake\Http\Exception\ForbiddenException] Forbidden in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 52
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:95
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/../Layout/ajax
+
+
+2020-02-17 05:43:22 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing CSRF token cookie in /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 220
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:128
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:402
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:107
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/home
+
+
+2020-02-17 05:43:22 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\ArticlesFixture" not found. Fixture "app.Articles" was referenced in test case "App\Test\TestCase\Model\Table\BannersTableTest". in /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/Fixture/FixtureManager.php on line 226
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/Fixture/FixtureManager.php:103
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/Fixture/FixtureInjector.php:100
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:411
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:628
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/home
+
+
+2020-02-17 05:43:54 Error: [Cake\Http\Exception\NotFoundException] Not Found in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 70
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:66
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:43:54 Error: [Cake\View\Exception\MissingTemplateException] Template file 'Pages/not_existing.php' could not be found.
+
+The following paths were searched:
+
+- /Users/huy.nguyen/project/cake4/cake4-test/templates/
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/
+ in Pages/not_existing.php on line 1334
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/Users/huy.nguyen/project/cake4/cake4-test/templates/',
+    1 => '/Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/View/View.php:747
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php:65
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:80
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:43:54 Error: [Cake\Http\Exception\ForbiddenException] Forbidden in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 52
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:95
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/../Layout/ajax
+
+
+2020-02-17 05:43:54 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing CSRF token cookie in /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 220
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:128
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:402
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:107
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/home
+
+
+2020-02-17 05:43:54 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\BannersFixture" not found. Fixture "app.Banners" was referenced in test case "App\Test\TestCase\Model\Table\BannersTableTest". in /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/Fixture/FixtureManager.php on line 226
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/Fixture/FixtureManager.php:103
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/Fixture/FixtureInjector.php:100
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:411
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:628
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/home
+
+
+2020-02-17 05:45:02 Error: [Cake\Http\Exception\NotFoundException] Not Found in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 70
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:66
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:45:02 Error: [Cake\View\Exception\MissingTemplateException] Template file 'Pages/not_existing.php' could not be found.
+
+The following paths were searched:
+
+- /Users/huy.nguyen/project/cake4/cake4-test/templates/
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/
+ in Pages/not_existing.php on line 1334
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/Users/huy.nguyen/project/cake4/cake4-test/templates/',
+    1 => '/Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/View/View.php:747
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php:65
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:80
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:45:02 Error: [Cake\Http\Exception\ForbiddenException] Forbidden in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 52
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:95
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/../Layout/ajax
+
+
+2020-02-17 05:45:02 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing CSRF token cookie in /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 220
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:128
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:402
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:107
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/home
+
+
+2020-02-17 05:45:42 Error: [Cake\Http\Exception\NotFoundException] Not Found in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 70
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:66
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:45:42 Error: [Cake\View\Exception\MissingTemplateException] Template file 'Pages/not_existing.php' could not be found.
+
+The following paths were searched:
+
+- /Users/huy.nguyen/project/cake4/cake4-test/templates/
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/
+ in Pages/not_existing.php on line 1334
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/Users/huy.nguyen/project/cake4/cake4-test/templates/',
+    1 => '/Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/View/View.php:747
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php:65
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:80
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:45:42 Error: [Cake\Http\Exception\ForbiddenException] Forbidden in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 52
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:95
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/../Layout/ajax
+
+
+2020-02-17 05:45:42 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing CSRF token cookie in /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 220
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:128
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:402
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:107
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/home
+
+
+2020-02-17 05:46:47 Error: [Cake\Http\Exception\NotFoundException] Not Found in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 70
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:66
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:46:47 Error: [Cake\View\Exception\MissingTemplateException] Template file 'Pages/not_existing.php' could not be found.
+
+The following paths were searched:
+
+- /Users/huy.nguyen/project/cake4/cake4-test/templates/
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/
+ in Pages/not_existing.php on line 1334
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/Users/huy.nguyen/project/cake4/cake4-test/templates/',
+    1 => '/Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/View/View.php:747
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php:65
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:80
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:46:47 Error: [Cake\Http\Exception\ForbiddenException] Forbidden in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 52
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:95
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/../Layout/ajax
+
+
+2020-02-17 05:46:47 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing CSRF token cookie in /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 220
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:128
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:402
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:107
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/home
+
+
+2020-02-17 05:47:26 Error: [Cake\Http\Exception\NotFoundException] Not Found in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 70
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:66
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:47:26 Error: [Cake\View\Exception\MissingTemplateException] Template file 'Pages/not_existing.php' could not be found.
+
+The following paths were searched:
+
+- /Users/huy.nguyen/project/cake4/cake4-test/templates/
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/
+ in Pages/not_existing.php on line 1334
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/Users/huy.nguyen/project/cake4/cake4-test/templates/',
+    1 => '/Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/View/View.php:747
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php:65
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:80
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:47:27 Error: [Cake\Http\Exception\ForbiddenException] Forbidden in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 52
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:95
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/../Layout/ajax
+
+
+2020-02-17 05:47:27 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing CSRF token cookie in /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 220
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:128
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:402
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:107
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/home
+
+
+2020-02-17 05:48:02 Error: [Cake\Http\Exception\NotFoundException] Not Found in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 70
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:66
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:48:02 Error: [Cake\View\Exception\MissingTemplateException] Template file 'Pages/not_existing.php' could not be found.
+
+The following paths were searched:
+
+- /Users/huy.nguyen/project/cake4/cake4-test/templates/
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/
+ in Pages/not_existing.php on line 1334
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/Users/huy.nguyen/project/cake4/cake4-test/templates/',
+    1 => '/Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/View/View.php:747
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php:65
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:80
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:48:03 Error: [Cake\Http\Exception\ForbiddenException] Forbidden in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 52
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:95
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/../Layout/ajax
+
+
+2020-02-17 05:48:03 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing CSRF token cookie in /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 220
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:128
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:402
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:107
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/home
+
+
+2020-02-17 05:50:15 Error: [Cake\Http\Exception\NotFoundException] Not Found in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 70
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:66
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:50:15 Error: [Cake\View\Exception\MissingTemplateException] Template file 'Pages/not_existing.php' could not be found.
+
+The following paths were searched:
+
+- /Users/huy.nguyen/project/cake4/cake4-test/templates/
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/
+ in Pages/not_existing.php on line 1334
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/Users/huy.nguyen/project/cake4/cake4-test/templates/',
+    1 => '/Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/View/View.php:747
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php:65
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:80
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:50:15 Error: [Cake\Http\Exception\ForbiddenException] Forbidden in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 52
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:95
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/../Layout/ajax
+
+
+2020-02-17 05:50:15 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing CSRF token cookie in /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 220
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:128
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:402
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:107
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/home
+
+
+2020-02-17 05:51:27 Error: [Cake\Http\Exception\NotFoundException] Not Found in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 70
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:66
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:51:27 Error: [Cake\View\Exception\MissingTemplateException] Template file 'Pages/not_existing.php' could not be found.
+
+The following paths were searched:
+
+- /Users/huy.nguyen/project/cake4/cake4-test/templates/
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/
+ in Pages/not_existing.php on line 1334
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/Users/huy.nguyen/project/cake4/cake4-test/templates/',
+    1 => '/Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/View/View.php:747
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php:65
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:80
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:51:27 Error: [Cake\Http\Exception\ForbiddenException] Forbidden in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 52
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:95
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/../Layout/ajax
+
+
+2020-02-17 05:51:27 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing CSRF token cookie in /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 220
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:128
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:402
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:107
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/home
+
+
+2020-02-17 05:52:46 Error: [Cake\Http\Exception\NotFoundException] Not Found in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 70
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:66
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:52:46 Error: [Cake\View\Exception\MissingTemplateException] Template file 'Pages/not_existing.php' could not be found.
+
+The following paths were searched:
+
+- /Users/huy.nguyen/project/cake4/cake4-test/templates/
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/
+ in Pages/not_existing.php on line 1334
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/Users/huy.nguyen/project/cake4/cake4-test/templates/',
+    1 => '/Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/View/View.php:747
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php:65
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:80
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/not_existing
+
+
+2020-02-17 05:52:46 Error: [Cake\Http\Exception\ForbiddenException] Forbidden in /Users/huy.nguyen/project/cake4/cake4-test/src/Controller/PagesController.php on line 52
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/Controller.php:524
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:122
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:385
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:95
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/../Layout/ajax
+
+
+2020-02-17 05:52:46 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing CSRF token cookie in /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 220
+Stack Trace:
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:128
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:118
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php:208
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:505
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php:402
+- /Users/huy.nguyen/project/cake4/cake4-test/tests/TestCase/Controller/PagesControllerTest.php:107
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1408
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:1028
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestResult.php:691
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestCase.php:756
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/Framework/TestSuite.php:597
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:621
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:200
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/src/TextUI/Command.php:159
+- /Users/huy.nguyen/project/cake4/cake4-test/vendor/phpunit/phpunit/phpunit:61
+
+Request URL: /pages/home
+
+
+2020-02-17 08:45:59 Warning: Warning (2): getimagesize(/tmp/php/php6hst32): failed to open stream: No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 273]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+getimagesize - [internal], line ??
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 273
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 54
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 08:46:08 Warning: Warning (2): getimagesize(/tmp/php/php6hst32): failed to open stream: No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 273]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+getimagesize - [internal], line ??
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 273
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 54
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 08:48:45 Warning: Warning (2): getimagesize(/tmp/php/php6hst32): failed to open stream: No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 274]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+getimagesize - [internal], line ??
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 274
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 54
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 10:08:21 Warning: Warning (2): chmod(): No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 331]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+chmod - [internal], line ??
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 331
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 68
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 10:20:06 Warning: Warning (2): chmod(): No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 331]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+chmod - [internal], line ??
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 331
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 68
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 10:20:24 Warning: Warning (2): chmod(): No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 331]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+chmod - [internal], line ??
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 331
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 69
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 10:21:16 Warning: Warning (2): chmod(): No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 331]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+chmod - [internal], line ??
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 331
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 70
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 10:21:16 Warning: Warning (2): file_get_contents(/Users/huy.nguyen/project/cake4/cake4-test/webroot/upload/Banners/images/example.php): failed to open stream: No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/StringCompareTrait.php, line 66]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+file_get_contents - [internal], line ??
+App\Test\TestCase\Model\Table\AppsTableTest::assertSameAsFile() - CORE/src/TestSuite/StringCompareTrait.php, line 66
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 71
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 10:22:37 Warning: Warning (2): chmod(): No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 331]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+chmod - [internal], line ??
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 331
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 71
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 10:22:37 Warning: Warning (2): file_get_contents(/Users/huy.nguyen/project/cake4/cake4-test/webroot/upload/Banners/images/example.php): failed to open stream: No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/StringCompareTrait.php, line 66]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+file_get_contents - [internal], line ??
+App\Test\TestCase\Model\Table\AppsTableTest::assertSameAsFile() - CORE/src/TestSuite/StringCompareTrait.php, line 66
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 72
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 10:23:22 Warning: Warning (2): chmod(): No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 331]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+chmod - [internal], line ??
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 331
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 71
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 10:23:22 Warning: Warning (2): file_get_contents(/Users/huy.nguyen/project/cake4/cake4-test/webroot/upload/Banners/images/example.php): failed to open stream: No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/vendor/cakephp/cakephp/src/TestSuite/StringCompareTrait.php, line 66]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+file_get_contents - [internal], line ??
+App\Test\TestCase\Model\Table\AppsTableTest::assertSameAsFile() - CORE/src/TestSuite/StringCompareTrait.php, line 66
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 72
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 10:28:54 Warning: Warning (2): chmod(): No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 331]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+chmod - [internal], line ??
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 331
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 70
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 10:30:13 Warning: Warning (2): chmod(): No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 331]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+chmod - [internal], line ??
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 331
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 69
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 10:32:46 Warning: Warning (2): chmod(): No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 331]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+chmod - [internal], line ??
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 331
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches_files() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 48
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 10:33:01 Warning: Warning (2): chmod(): No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 331]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+chmod - [internal], line ??
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 331
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches_files() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 48
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 10:33:11 Warning: Warning (2): chmod(): No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 331]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+chmod - [internal], line ??
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 331
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches_files() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 48
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
+2020-02-17 10:35:17 Warning: Warning (2): chmod(): No such file or directory in [/Users/huy.nguyen/project/cake4/cake4-test/src/Model/Table/AppTable.php, line 331]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+chmod - [internal], line ??
+App\Model\Table\AppTable::_uploadAttaches() - APP/Model/Table/AppTable.php, line 331
+App\Test\TestCase\Model\Table\AppsTableTest::test_uploadAttaches_files() - ROOT/tests/TestCase/Model/Table/AppsTableTest.php, line 48
+PHPUnit\Framework\TestCase::runTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1408
+PHPUnit\Framework\TestCase::runBare() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1028
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 691
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 756
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 597
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 621
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 200
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 159
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 61
+
+
+
