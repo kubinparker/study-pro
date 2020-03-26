@@ -452,7 +452,7 @@ class AppController extends Controller
         $isValid = true;
 
         // $this->request->getData() => post_max_sizeを越えた場合の対応(空になる)
-        if ($this->request->is(array('post', 'put')) && $this->request->getData())
+        if ($this->request->is(['post', 'put']) && $this->request->getData())
         {
             $data = $this->request->getData();
             if(!isset($data[$this->modelName])){

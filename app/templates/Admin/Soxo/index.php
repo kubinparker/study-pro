@@ -57,9 +57,11 @@
                             <?= $this->Html->nestedList(array_slice($result, 10, 10), ['id' => 'result_2'])?>
                             <?= $this->Html->nestedList(array_slice($result, 20, 10), ['id' => 'result_3'])?>
                         </div>
-                        <div class="btn_area">
-                            <?= $this->Form->button('登録する', ['type' => 'submit', 'class' => 'btn_confirm submitButton']);?>
-                        </div>
+                        <?php if(!$check_button):?>
+                            <div class="btn_area">
+                                <?= $this->Form->button('登録する', ['type' => 'submit', 'class' => 'btn_confirm submitButton']);?>
+                            </div>
+                        <?php endif;?>
                     <?php endif;?>
             <?php endif;?>
         </div>
