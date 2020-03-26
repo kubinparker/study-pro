@@ -17,7 +17,8 @@
 
         public function index($date = null)
         {
-            $date = ($date) ? $date : date('Y-m-d');
+
+            $date = ($date) && \DateTime::createFromFormat('Y-m-d', $date) ? $date : date('Y-m-d');
             $date = date('Y-m-d',strtotime($date));
             $data = $this->{$this->modelName}->render_number($date);
 
@@ -28,6 +29,25 @@
             if($this->request->is(['post', 'put'])){
                 $check = 1;
             }
+            $this->set('date', $date);
             $this->set('data', [$this->modelName => $data]);
+        }
+
+        public function getMonth($m = null, $y = null)
+        {
+            $t = \DateTime::createFromFormat('Y-m', $y.'-'.$m);
+            if(!$t){
+                $m = date('m');
+                $y = date('Y');
+            }
+            $str = $y.'-'.$m.'-1';
+            $end = $y.'-'.$m.'-'. cal_days_in_month(CAL_GREGORIAN, $m, $y);
+
+            $str = date('Y-m-d',strtotime($str));
+            $end = date('Y-m-d',strtotime($end));
+
+            $data = $this->{$this->modelName}->get_date_of_time($str, $end);
+            dd($data);
+            return $m;
         }
     }

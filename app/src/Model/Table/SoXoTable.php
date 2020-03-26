@@ -39,6 +39,13 @@
             return $results->save($query);
         }
 
+        public function get_date_of_time($str, $end = null){
+            if(empty($end)) return $this->render_number($str);
+            return $this->setTable('results')->find()
+            ->where(['date >=' => $str])
+            ->where(['date <=' => $end])
+            ->toList();
+        }
     }
     
 ?>

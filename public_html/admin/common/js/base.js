@@ -40,7 +40,7 @@ $(function(){
 			$('header .link_menu').removeClass('icon-icn_menu');
 			$('header .link_menu').addClass('icon-icn_cross');
 	    $('#side').animate({'marginLeft':'246px'},200).addClass('on');
-			$('#content').animate({'paddingLeft':'246px'},200);
+			$('#content, footer').animate({'paddingLeft':'246px'},200);
 
 			// $('#login .close').on('click',function(){
 			// 	$('#login').animate({'marginLeft':'0px'},200);
@@ -52,7 +52,7 @@ $(function(){
 			$('header .link_menu').removeClass('icon-icn_cross');
 			$('header .link_menu').addClass('icon-icn_menu');
 	    $('#side').animate({'marginLeft':'0px'},200);
-			$('#content').animate({'paddingLeft':'0px'},200);
+			$('#content, footer').animate({'paddingLeft':'0px'},200);
 	  }
 	});
 

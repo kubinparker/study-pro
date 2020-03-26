@@ -5,7 +5,7 @@
 #result_2::after,
 #result_3::after{
     content: '';
-    height: 1px;
+    height: 0;
     clear: both;
     display: block;
 }

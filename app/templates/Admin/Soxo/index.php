@@ -49,15 +49,18 @@
         <div class="table_area form_area">
             <?php if($data[$ModelName]):?>
                 <?= $this->Form->create($data[$ModelName], ['type' => 'file', 'label' => false]); ?>
-                <div class="boxresult">
-                    <?= $this->Html->nestedList(array_slice($result, 0, 10), ['id' => 'result_1'])?>
-                    <?= $this->Html->nestedList(array_slice($result, 10, 10), ['id' => 'result_2'])?>
-                    <?= $this->Html->nestedList(array_slice($result, 20, 10), ['id' => 'result_3'])?>
-                </div>
-                
-                <div class="btn_area">
-                    <?= $this->Form->button('登録する', ['type' => 'submit', 'class' => 'btn_confirm submitButton']);?>
-                </div>
+                <?php 
+                    $result = json_decode($data[$ModelName]->result);
+                    if(!empty($result)):?>
+                        <div class="boxresult">
+                            <?= $this->Html->nestedList(array_slice($result, 0, 10), ['id' => 'result_1'])?>
+                            <?= $this->Html->nestedList(array_slice($result, 10, 10), ['id' => 'result_2'])?>
+                            <?= $this->Html->nestedList(array_slice($result, 20, 10), ['id' => 'result_3'])?>
+                        </div>
+                        <div class="btn_area">
+                            <?= $this->Form->button('登録する', ['type' => 'submit', 'class' => 'btn_confirm submitButton']);?>
+                        </div>
+                    <?php endif;?>
             <?php endif;?>
         </div>
         <?= $this->Form->end(); ?>

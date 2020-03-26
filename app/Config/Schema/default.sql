@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 18, 2020 at 10:57 AM
+-- Generation Time: Mar 26, 2020 at 09:17 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.8
 
@@ -26,14 +26,16 @@ SET time_zone = "+00:00";
 -- Table structure for table `admins`
 --
 
-CREATE TABLE `admins` (
-  `id` int(10) UNSIGNED NOT NULL,
+DROP TABLE IF EXISTS `admins`;
+CREATE TABLE IF NOT EXISTS `admins` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `created` datetime NOT NULL,
   `updated` datetime NOT NULL,
   `username` varchar(20) NOT NULL,
   `password` varchar(200) NOT NULL,
-  `role` int(11) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `role` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `admins`
@@ -51,8 +53,9 @@ INSERT INTO `admins` (`id`, `created`, `updated`, `username`, `password`, `role`
 -- Table structure for table `banners`
 --
 
-CREATE TABLE `banners` (
-  `id` int(10) UNSIGNED NOT NULL,
+DROP TABLE IF EXISTS `banners`;
+CREATE TABLE IF NOT EXISTS `banners` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `created` datetime DEFAULT NULL,
   `updated` datetime DEFAULT NULL,
   `date` date DEFAULT NULL,
@@ -69,8 +72,9 @@ CREATE TABLE `banners` (
   `file1_size` int(11) UNSIGNED DEFAULT NULL,
   `file2` varchar(255) DEFAULT NULL,
   `file2_name` varchar(255) DEFAULT NULL,
-  `file2_size` int(11) UNSIGNED DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `file2_size` int(11) UNSIGNED DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `banners`
@@ -85,37 +89,31 @@ INSERT INTO `banners` (`id`, `created`, `updated`, `date`, `status`, `position`,
 (8, '2020-02-10 15:18:31', '2020-02-10 16:01:05', '2020-02-10', 'publish', 1, 'https://www.google.com/', 'バナー8', 'img_8_9747d28d-20b8-4a31-b99b-a049beb650af.jpg', 'img_8_f8f93193-67de-4156-a8c5-dccb552c4ac3.jpg', 'img_8_fdead3f4-78a6-4721-a303-07b4a9c699ca.jpg', 1, 'file_8_ed69d6cf-fbcb-4aba-9280-121924fabdac.doc', '01gouyousiki.doc', 34816, 'file_8_040b2bc2-2dc4-4398-ae62-daa787635326.pdf', 'nouzei18.12.04.pdf', 132664),
 (12, '2020-02-13 16:44:12', '2020-02-13 16:44:12', '2020-02-13', 'publish', 7, 'https://www.google.com/', 'バナー12', 'img_12_5e44fe4c-8818-41f9-9923-1cc185824a64.png', NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL);
 
---
--- Indexes for dumped tables
---
+-- --------------------------------------------------------
 
 --
--- Indexes for table `admins`
---
-ALTER TABLE `admins`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `banners`
---
-ALTER TABLE `banners`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
+-- Table structure for table `results`
 --
 
---
--- AUTO_INCREMENT for table `admins`
---
-ALTER TABLE `admins`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+DROP TABLE IF EXISTS `results`;
+CREATE TABLE IF NOT EXISTS `results` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `result` varchar(255) NOT NULL,
+  `date` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 --
--- AUTO_INCREMENT for table `banners`
+-- Dumping data for table `results`
 --
-ALTER TABLE `banners`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+INSERT INTO `results` (`id`, `result`, `date`) VALUES
+(1, '[1,2,3]', '2020-03-18'),
+(2, '[1,2,4]', '2020-03-17'),
+(5, '[4,8,11,14,16,17,19,21,23,25,27,30,40,42,46,47,52,55,58,59,65,67,72,77,78,82,87,96,97,98,99]', '2020-03-18'),
+(6, '[0,3,12,13,17,19,20,22,24,25,26,28,34,36,41,43,44,45,50,58,62,63,65,67,68,69,73,74,77,79,99]', '2020-03-18'),
+(7, '[1,5,8,10,13,15,17,19,27,32,35,41,43,48,54,56,58,59,65,66,67,69,76,78,80,81,84,90,93,97,99]', '2020-03-18'),
+(8, '[0,16,20,25,29,30,31,34,36,41,42,45,46,47,50,56,59,60,65,66,69,72,74,75,76,78,83,84,86,90,92]', '2020-03-25');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
