@@ -43,15 +43,7 @@ a:hover img {
 a:hover {
 	text-decoration: none;
 }
-a:hover,
-a:hover img,
-.img_hover:hover {
-/*
-	filter: alpha(opacity=80);
-	-ms-filter: "alpha(opacity=80)";
-	opacity: .80;
-*/
-}
+
 a {outline: none;}
 a:focus, *:focus {outline:none;}
 
@@ -381,24 +373,27 @@ header .status span.username em {
 header .status span.time.calendar {
 	position: relative;
 }
+header .status span.time.calendar.active #calendar{
+	display: block;
+}
 .icon-icn_calendar{
     padding-right: 0 !important;
     background: url(../images/icons8-calendar-96.png) no-repeat center center;
     height: 100%;
-    width: 20px;
+    width: 30px;
     color: #fff;
     background-size: 15px;
 }
 #calendar{
-	/* display: none; */
+	display: none;
 	position: absolute;
-	left: -310px;
+	width:310px;
+	left: -120px;
 	top: 55px;
-	/* width: 300px; */
-	/* height: 300px; */
 	background: #fff;
 	z-index: 1001;
 	color: #000;
+	box-shadow: 0px 0px 11px 3px #999;
 }
 
 /* side */
@@ -1176,4 +1171,5 @@ footer {
 .fc-button{
 	padding-left: 1em !important;
 	padding-right: 1em !important;
+	background: #287ac5 !important;
 }

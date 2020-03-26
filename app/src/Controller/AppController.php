@@ -61,6 +61,7 @@ class AppController extends Controller
 
         $this->modelName = Inflector::camelize($this->modelClass);
         $this->set('ModelName', $this->modelName);
+        $this->set('date', date("Y-m-d"));
         
         // session
         $this->session = $this->getRequest()->getSession();
@@ -765,15 +766,6 @@ class AppController extends Controller
     {
         $this->session->delete('BackurlArg.' . $key);
     }
-
-    // public function appError($error)
-    // {
-    //     if ($this->params['prefix'] === 'admin') {
-    //         $this->redirect('/admin/');
-    //     } else {
-    //         $this->redirect(array('controller' => 'homes', 'action' => 'index'));
-    //     }
-    // }
 
     // 暗号化
     public function encrypt($str)

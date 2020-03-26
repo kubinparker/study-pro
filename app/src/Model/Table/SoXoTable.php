@@ -39,12 +39,11 @@
             return $results->save($query);
         }
 
-        public function get_date_of_time($str, $end = null){
-            if(empty($end)) return $this->render_number($str);
+        public function get_data_of_range_date($str, $end){
             return $this->setTable('results')->find()
-            ->where(['date >=' => $str])
-            ->where(['date <=' => $end])
-            ->toList();
+                ->where(['date >=' => $str])
+                ->where(['date <=' => $end])
+                ->toList();
         }
     }
     

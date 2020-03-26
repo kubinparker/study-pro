@@ -17,7 +17,6 @@
 
         public function index($date = null)
         {
-
             $date = ($date) && \DateTime::createFromFormat('Y-m-d', $date) ? $date : date('Y-m-d');
             $date = date('Y-m-d',strtotime($date));
             $data = $this->{$this->modelName}->render_number($date);
@@ -33,21 +32,14 @@
             $this->set('data', [$this->modelName => $data]);
         }
 
-        public function getMonth($m = null, $y = null)
+        public function getMonth($start = null, $end = null)
         {
-            $t = \DateTime::createFromFormat('Y-m', $y.'-'.$m);
-            if(!$t){
-                $m = date('m');
-                $y = date('Y');
+            if(\DateTime::createFromFormat('Y-m-d', $start) && \DateTime::createFromFormat('Y-m-d', $end)){
+                $data = $this->{$this->modelName}->get_data_of_range_date(date('Y-m-d',strtotime($start)), date('Y-m-d',strtotime($end)));
+                echo json_encode($data);
+            }else{
+                echo json_encode([]);
             }
-            $str = $y.'-'.$m.'-1';
-            $end = $y.'-'.$m.'-'. cal_days_in_month(CAL_GREGORIAN, $m, $y);
-
-            $str = date('Y-m-d',strtotime($str));
-            $end = date('Y-m-d',strtotime($end));
-
-            $data = $this->{$this->modelName}->get_date_of_time($str, $end);
-            dd($data);
-            return $m;
+            exit();
         }
     }

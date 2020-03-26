@@ -41,7 +41,7 @@
  ?>
 
 <div class="title_area">
-    <h1>バナー: <?= date('d/m/Y')?></h1>
+    <h1>バナー: <?= $date?></h1>
 </div>
 <div class="content_inr">
     <div class="box">

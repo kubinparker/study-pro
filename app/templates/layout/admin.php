@@ -62,10 +62,6 @@
         </div>
         <?php echo $this->fetch('afterContentClose'); ?>
     </div>
-
-
-
-
     <?php echo $this->fetch('beforeBodyClose'); ?>
 </body>
 <script type="text/javascript">
@@ -84,42 +80,73 @@
             setTimeout(item, 100);
         }
         setTimeout(item, 100);
-        
     });
 </script>
 <script>
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-        plugins: [ 'interaction', 'dayGrid', 'timeGrid' ],
-        header: {
-            left: 'prev',
-            center: 'title',
-            right: 'next'
-        },
-        defaultDate: '<?=$date?>',
-        events: [
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        var data_event = [
             {
                 start: '<?=$date?>',
                 end: '<?=$date?>',
                 rendering: 'background',
-                color: '#ff9f89'
+                color: '#ff0000'
             }
-        ],
-        titleFormat: {
-            month: 'numeric',
-            year: 'numeric'
-        },
-        contentHeight: 'auto',
-        dateClick: function(info) {
-            location.href = "/admin/soxo/" + info.dateStr;
-        }
+        ];
+        
+        var array_time = {};
+
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            plugins: [ 'interaction', 'dayGrid', 'timeGrid' ],
+            header: {
+                left: 'prev',
+                center: 'title',
+                right: 'next'
+            },
+            defaultDate: '<?=$date?>',
+            events: function(fetchInfo, successCallback, failureCallback){
+                let start_date = fetchInfo.startStr.valueOf().split("T")[0];
+                let end_date = fetchInfo.endStr.valueOf().split("T")[0];
+                let k = start_date.replace('-', '') + "-" + end_date.replace('-', '');
+                if(!array_time.hasOwnProperty(k)){
+                    $.ajax({
+                        url: '/admin/soxo/month/'+start_date+'/'+end_date,
+                        type: 'GET',
+                        dataType: 'json',
+                        success: function (resp){
+                            resp.forEach(function(item){
+                                data_event.push(
+                                    {
+                                        start: item.date,
+                                        end: item.date,
+                                        rendering: 'background',
+                                        color: '#ff9f89'
+                                    }
+                                );
+                            });
+                            array_time[k] = k;
+                            successCallback(data_event);
+                        }
+                    });
+                }
+            },
+            titleFormat: {
+                month: 'numeric',
+                year: 'numeric'
+            },
+            contentHeight: 'auto',
+            dateClick: function(info) {
+                location.href = "/admin/soxo/" + info.dateStr;
+            }
+        });
+        calendar.render();
+
+
+        $(".icon-icn_calendar").click(function(){
+            $(this).parents('.calendar').toggleClass('active');
+        })
     });
-
-    calendar.render();
-  });
-
 </script>
 </html>
