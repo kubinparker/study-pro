@@ -115,8 +115,7 @@ class PositionBehavior extends Behavior
     {
         $Model = $this->_table;
         $modelName = $Model->getAlias();
-    
-        $id = $Model->id;
+        $id = $entity->id;
         //
         extract($this->settings[$modelName]);
 

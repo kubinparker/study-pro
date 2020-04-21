@@ -25,17 +25,23 @@
                         ->where(['username' => $data['username'], 'password' => $data['password']])
                         ->first();
                     if ($r) {
-                        $this->session->write(array('uid' => $r->id,
-                                                'data' => $r,
-                                                'role' => $r->role));
+                        $this->session->write(
+                            array(
+                                'uid' => $r->id,
+                                'data' => $r,
+                                'role' => $r->role
+                            )
+                        );
                     }
                 }
                 if (empty($r)) {
                     $this->Flash->set('アカウント名またはパスワードが違います');
                 }
             }
-
             if ($this->isLogin()) {
+                if($this->session->read('role') != 0 || $this->session->read('role') != 100){
+                    return $this->redirect('/admin/soxo/');
+                }
                 $layout = "admin";
                 $view = "index";
             }

@@ -146,7 +146,7 @@
 
         $(".icon-icn_calendar").click(function(){
             $(this).parents('.calendar').toggleClass('active');
-        })
+        });
     });
 </script>
 </html>

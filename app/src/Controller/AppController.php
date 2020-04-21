@@ -35,6 +35,8 @@ use Cake\Utility\Inflector;
 class AppController extends Controller
 {
     public $session;
+
+    public $ket_qua_net = 'https://ketqua.net/xo-so-truyen-thong.php?ngay=';
     /** 実行される順番 */
     // 1.Controllerのinitialize()
     // 2.ComponentのbeforeFilter()
@@ -389,8 +391,8 @@ class AppController extends Controller
 
     public function checkLogin()
     {
-        if (!$this->isLogin()) {
-            $this->redirect('/admin/');
+        if ( !$this->isLogin() || is_null($this->isLogin()) ) {
+            return $this->redirect('/admin');
         }
     }
 

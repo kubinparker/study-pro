@@ -12,9 +12,7 @@
  * 
  * chức năng cần
  * mỗi ngày lấy ra 30 số ngẫu nhiên 0-100
- * chọc vào trang lịch vạn niên lấy ra giờ đẹp trong ngày 
- * check giờ đăng nhập ngày hôm đó so với số giờ lấy ra trên trang lịch vạn niên
- * lấy số giờ gần nhất sắp tới để render 
+
  * role = 1 
  * thì render 1 lần duy nhất trong ngày. lần đăng nhập đầu tiên sử dụng logic trên
  * 
@@ -22,9 +20,10 @@
  * role = 0 
  * đăng nhập xem được thành viên role 1 đăng nhập của ngày đó chưa
  * đăng nhập rồi thì xem được số render của ngày hôm đó
+ * 
  * nếu thành viên đăng nhập rồi mà đến 7h tối không có thông báo lại trên hệ thống sẽ phải nộp 
- * trường hợp ngày đó cả 30 số k trúng :  50k vào vốn (quên hoặc k đánh)
- * trường hơp ngày đó trúng : 100k (lý do: đánh ăn riêng k khai báo lên hệ thống thì tối đa cũng phải bỏ tiền túi là 300k => lãi 400k . vì vậy phạt nộp lên hệ thống 100k (đuơng nhiên))
+ * -- trường hợp ngày đó cả 30 số k trúng :  50k vào vốn (quên hoặc k đánh)
+ * -- trường hơp ngày đó trúng : 100k (lý do: đánh ăn riêng k khai báo lên hệ thống thì tối đa cũng phải bỏ tiền túi là 300k => lãi 400k . vì vậy phạt nộp lên hệ thống 100k (đuơng nhiên))
  * đánh rồi thì xác nhận trên hệ thống
  * hệ thống sẽ báo về mail role 0 và role 100 là thành viên đã đánh
  * role 0 cũng phải xác nhận là đã xem kết quả ngày đó của thành viên đó
@@ -47,17 +46,18 @@
     <div class="box">
         <h3><?= '新規登録'; ?></h3> <!-- day so can danh ngay hom nay -->
         <div class="table_area form_area">
-            <?php if($data[$ModelName]):?>
+           <?php if($data[$ModelName]):?>
                 <?= $this->Form->create($data[$ModelName], ['type' => 'file', 'label' => false]); ?>
                 <?php 
                     $result = json_decode($data[$ModelName]->result);
                     if(!empty($result)):?>
                         <div class="boxresult">
-                            <?= $this->Html->nestedList(array_slice($result, 0, 10), ['id' => 'result_1'])?>
-                            <?= $this->Html->nestedList(array_slice($result, 10, 10), ['id' => 'result_2'])?>
-                            <?= $this->Html->nestedList(array_slice($result, 20, 10), ['id' => 'result_3'])?>
+                            <?= $this->Html->nestedList($result, ['id' => 'result_1'])?>
+                            <!-- <?= $this->Html->nestedList(array_slice($result, 10, 10), ['id' => 'result_2'])?>
+                            <?= $this->Html->nestedList(array_slice($result, 20, 10), ['id' => 'result_3'])?> -->
+                            <?= $check_button == 1 ? $this->Html->image("/admin/soxo/images/checked.png", ['style' => '']) : '';?>
                         </div>
-                        <?php if(!$check_button):?>
+                        <?php if($check_button == 0):?>
                             <div class="btn_area">
                                 <?= $this->Form->button('登録する', ['type' => 'submit', 'class' => 'btn_confirm submitButton']);?>
                             </div>

@@ -27,7 +27,7 @@
         public function save_number()
         {
             $data = [];
-            while(count($data) < 31) {
+            while(count($data) < 30) {
                 $i = mt_rand(0, 99);
                 if(!in_array($i, $data)){
                     $data[] = $i;

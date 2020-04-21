@@ -29,7 +29,8 @@
             "App\\": "src/"
         },
         "files": [
-            "Vendor/functions.php"
+            "Vendor/functions.php",
+            "Vendor/simple_html_dom.php"
         ]
     },
     "autoload-dev": {

@@ -1,5 +1,13 @@
 .boxresult{
     border: 1px solid #ccc;
+    position: relative;
+}
+.boxresult img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    user-select: none;
 }
 #result_1::after,
 #result_2::after,
@@ -43,5 +51,80 @@
     }
     100% {
         background-position: 0 300px; 
+    }
+}
+@media screen and (max-width: 320px) {
+    header .status a span, 
+    header .status span.time {
+        padding: 0 10px;
+    }
+    header .status span.time {
+        display: none;
+    }
+    header .status a {
+        float: right;
+    }
+    header .status span.calendar {
+        display: block;
+    }
+    #content {
+        min-width: unset;
+    }
+    #content .title_area h1 {
+        font-size: 16px;
+        padding: 10px;
+    }
+    #content .content_inr .box {
+        margin: 0;
+        padding: 0;
+    }
+    .boxresult img {
+        width: 55px;
+        bottom: 42%;
+        right: 40%;
+    }
+    #calendar {
+        left: unset;
+        width: 300px;
+        top: 65px;
+    }
+    #result_1 li, 
+    #result_2 li, 
+    #result_3 li {
+        width: 20%;
+        height: 55px;
+    }
+    #content .content_inr .box .table_area {
+        margin: 0;
+        padding: 5px;
+    }
+    header .status a span, header .status span.time {
+        border-left: 0;
+    }
+    header .link_menu {
+        display: none;
+    }
+    header .status {
+        width: 100%;
+    }
+    #content .content_inr {
+        padding: 0;
+    }
+    #content .content_inr .box h3 {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .btn_area {
+        margin-top: 5px;
+    }
+    .btn_area a.btn_confirm, 
+    .btn_area a.btn_send, 
+    .btn_area button.btn_send, 
+    .btn_area button.btn_confirm {
+        width: 45%;
+    }
+    [class*="result_"] li,
+    .boxresult{
+        animation-duration: 3s; 
     }
 }

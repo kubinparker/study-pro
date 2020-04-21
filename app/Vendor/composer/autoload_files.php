@@ -35,4 +35,5 @@ return array(
     '6124b4c8570aa390c21fafd04a26c69f' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     '801c31d8ed748cfa537fa45402288c95' => $vendorDir . '/psy/psysh/src/functions.php',
     '7bb20e656944594ae579bde66cd4b896' => $baseDir . '/Vendor/functions.php',
+    '49833b89e3a6cc76b0a54535ccde2cfc' => $baseDir . '/Vendor/simple_html_dom.php',
 );

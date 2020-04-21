@@ -28,9 +28,7 @@
                 return $this->save($query);
             }else{
                 $query = $this->newEntity(['user_id' => $user_id, 'result_id'=> $result_id, 'date' => $date]);
-                //// CONTINUE ////
                 return $this->save($query);
-                
             }
             
         }
